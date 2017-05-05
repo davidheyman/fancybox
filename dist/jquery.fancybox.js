@@ -1,5 +1,5 @@
 // ==================================================
-// fancyBox v3.0.47
+// fancyBox v3.0.48
 //
 // Licensed GPLv3 for open source use
 // or fancyBox Commercial License for commercial use
@@ -1134,6 +1134,10 @@
 
             if ( margin.length == 2 ) {
                 margin = [ margin[0], margin[1], margin[0], margin[1] ];
+            }
+
+            if ( margin.length == 4 ) {
+                margin = [ margin[0], margin[1], margin[2], margin[3] ];
             }
 
             if ( $W.width() < 800 ) {
@@ -2280,7 +2284,7 @@
 
     $.fancybox = {
 
-        version  : "3.0.47",
+        version  : "3.0.48",
         defaults : defaults,
 
 
